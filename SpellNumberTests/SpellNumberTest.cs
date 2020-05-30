@@ -92,7 +92,15 @@ namespace SpellNumberTests
         public void Test345333True()
         {
             var result = spellNumber.FinalNumberToWord(345333);
-            Assert.Equal("Three Lakhs Fourty Five Thousand Three Hundred Thirty Three", result);
+            Assert.Equal("Three Lakh Fourty Five Thousand Three Hundred Thirty Three", result);
+        }
+
+
+        [Fact]
+        public void Test12345333True()
+        {
+            var result = spellNumber.FinalNumberToWord(12345333);
+            Assert.Equal("One Crore Twenty Three Lakh Fourty Five Thousand Three Hundred Thirty Three", result);
         }
     }
 }

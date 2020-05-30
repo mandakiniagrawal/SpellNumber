@@ -2,7 +2,7 @@ using System;
 
 namespace SpellNumberExercise
 {
-    class SpellNumber
+    public class SpellNumber
     {
         public string NumberToWord(int num)
         {
